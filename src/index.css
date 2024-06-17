@@ -5,6 +5,10 @@
     font-family: "Quantico", sans-serif;
 }
 
+body {
+    margin: 0 1rem;
+}
+
 :root {
     --color-primary: #3b3f3f;
     --color-secondary: #DAA520;

@@ -8,7 +8,7 @@ function Banner() {
                 <h1>Hi, I'm Dolce</h1>
                 <p>a <span>
                         <Typewriter
-                            words={['full stavl','full stack web developer', 'creator', 'marketing degree', 'problem solver']}
+                            words={['full stavl','full stack web developer', 'creator', 'marketing specialist', 'problem solver']}
                             loop={0}
                             cursor
                             cursorStyle='_'
