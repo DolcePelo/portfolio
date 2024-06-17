@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./components/Navbar/navbar.js";
+import Banner from "./components/Banner/Banner.js";
+import Video from "./assets/bg-video.mp4";
+import MusicPlayer from "./components/Music/MusicPlayer.js";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="video-container">
+        <video autoPlay muted loop id="video-bg">
+          <source src={Video} type="video/mp4"/>
+        </video>
+      </div>
+      <Navbar />
+      <Banner />
+      <MusicPlayer />
     </div>
   );
 }
