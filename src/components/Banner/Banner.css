@@ -10,6 +10,7 @@
     flex: 1;
     padding: 5rem;
     color: white;
+    max-width: 50%;
 }
 
 .banner-text h1 {
@@ -27,9 +28,13 @@
 .banner-image {
     flex: 1;
     padding: 20px;
+    width: 50%;
 }
 
 .banner-image img {
-    max-width: 100%;
-    height: auto;
+    position: absolute;
+    top: 0;
+    right: 5rem;
+    height: 30rem;
+    width: 28rem;
 }

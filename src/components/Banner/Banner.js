@@ -1,5 +1,6 @@
 import "./Banner.css";
 import { Typewriter } from "react-simple-typewriter";
+import BannerImg from "../../assets/banner-img.png";
 
 function Banner() {
     return (
@@ -20,7 +21,7 @@ function Banner() {
                 </p>
             </div>
             <div className="banner-image">
-
+                <img src={BannerImg} />
             </div>
         </div>
     )
