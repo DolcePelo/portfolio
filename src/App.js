@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/navbar.js";
 import Banner from "./components/Banner/Banner.js";
 import Video from "./assets/bg-video.mp4";
 import MusicPlayer from "./components/Music/MusicPlayer.js";
+import Skills from "./components/Skills/Skills.js";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Navbar />
       <Banner />
       <MusicPlayer />
+      <Skills />
     </div>
   );
 }

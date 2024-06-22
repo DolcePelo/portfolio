@@ -11,6 +11,7 @@
     padding: 5rem;
     color: white;
     max-width: 50%;
+    height: 36rem;
 }
 
 .banner-text h1 {
@@ -35,6 +36,6 @@
     position: absolute;
     top: 0;
     right: 5rem;
-    height: 30rem;
-    width: 28rem;
+    height: 38rem;
+    width: 36rem;
 }
