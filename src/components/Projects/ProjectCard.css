@@ -1,0 +1,32 @@
+.project-card {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, rgba(218, 165, 32, 0.5), rgba(218, 165, 32, 0.8));
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: box-shadow 0.3s;
+    box-shadow: 0 -4px 10px rgba(255, 255, 255, 0.5);
+    margin: 1rem 0;
+    width: 30%;
+    min-height: 15rem;
+}
+
+.project-info {
+    text-align: left;
+    color: var(--color-text);
+}
+
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.tech {
+    background-color: var(--color-secondary);
+    color: var(--color-text);
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+}

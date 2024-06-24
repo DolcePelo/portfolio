@@ -5,6 +5,7 @@ import Video from "./assets/bg-video.mp4";
 import MusicPlayer from "./components/Music/MusicPlayer.js";
 import Skills from "./components/Skills/Skills.js";
 import AboutMe from "./components/AboutMe/AboutMe.js";
+import Projects from "./components/Projects/Projects.js"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <MusicPlayer />
       <Skills />
       <AboutMe />
+      <Projects />
     </div>
   );
 }
