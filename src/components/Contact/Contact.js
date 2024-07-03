@@ -6,15 +6,18 @@ import contactImg3 from "../../assets/linkedin-icon.png";
 const contactData = [
     {
         contact: contactImg1,
-        alt: "Email Icon"
+        alt: "Email Icon",
+        href: "mailto:alejandrojpelozatto@gmail.com"
     },
     {
         contact: contactImg2,
-        alt: "Github Icon"
+        alt: "Github Icon",
+        href: "https://github.com/DolcePelo"
     },
     {
         contact: contactImg3,
-        alt: "Linkedin Icon"
+        alt: "Linkedin Icon",
+        href: "https://www.linkedin.com/in/alejandro-pelozatto-70191060/"
     }
 ]
 
@@ -33,10 +36,12 @@ function Contact() {
                 {
                     contactData.map((contact, index) => (
                         <div className="contact-info" key={index}>
-                            <img src={contact.contact} alt={contact.alt}/>
+                            <a href={contact.href} target="_blank" rel="noopener noreferrer">
+                                <img src={contact.contact} alt={contact.alt} />
+                            </a>
                         </div>
                     )
-                )}
+                    )}
             </div>
         </div>
     )
