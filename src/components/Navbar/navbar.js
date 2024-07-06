@@ -5,12 +5,17 @@ import "./Navbar.css";
 function Navbar() {
     const navbarRef = useRef(null);
     const [ isSticky, setSticky ] = useState(false);
+    const [isMenuOpen, setMenuOpen] = useState(false);
 
     const handleScroll = () => {
         if (navbarRef.current) {
             setSticky(navbarRef.current.getBoundingClientRect().top <= 0);
         }
     };
+
+    const toggleMenu = () => {
+        setMenuOpen(!isMenuOpen);
+    }
 
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
@@ -22,7 +27,10 @@ function Navbar() {
     return (
         <nav ref={navbarRef} className={`navbar ${isSticky ? 'sticky' : ''}`}>
             <div className="navbar-logo"><img src={Logo}></img></div>
-            <ul className="navbar-links">
+            <div className="navbar-toggle" onClick={toggleMenu}>
+                &#9776;
+            </div>
+            <ul className={`navbar-links ${isMenuOpen ? "open" : ""}`}>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
