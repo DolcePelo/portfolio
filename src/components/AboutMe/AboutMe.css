@@ -130,3 +130,9 @@
     box-shadow: 0 12px 24px rgba(0, 0, 0, 04); 
     object-fit: cover; 
 }
+
+@media (max-width: 480px) {
+    .about-me-languages-container {
+        flex-direction: column;
+    }
+}

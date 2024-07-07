@@ -99,3 +99,9 @@
         transform: translateX(-238%);
     }
 }
+
+@media (max-width: 480px) {
+    .skills-container {
+        margin-top: 15.5rem;
+    }
+}

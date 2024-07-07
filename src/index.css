@@ -44,3 +44,10 @@ body {
     color: var(--color-text);
     z-index: 100;
 }
+
+@media (max-width: 480px) {
+    section {
+        width: 100%;
+    }
+    
+}

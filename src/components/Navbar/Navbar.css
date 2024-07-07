@@ -110,6 +110,8 @@
         flex: 1;
         display: flex;
         justify-content: center;
+        padding-left: 1rem;
+        object-fit: cover;
     }
 
     .navbar-toggle {

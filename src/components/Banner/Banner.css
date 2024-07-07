@@ -39,3 +39,39 @@
     height: 38rem;
     width: 36rem;
 }
+
+@media (max-width: 480px) {
+    .banner-container {
+        flex-direction: column;
+        width: 90%;
+        padding: 1rem 0.5rem;
+    }
+
+    .banner-text {
+        max-width: 100%;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .banner-text h1 {
+        font-size: 2rem;
+    }
+
+    .banner-text p {
+        font-size: 2rem;
+        padding: 0;
+    }
+
+    /* .banner-image {
+        max-width: 100%;
+        height: auto;
+        display: none;
+    } */
+
+    .banner-image img {
+        width: 18rem;
+        height: 18rem;
+        top: 8rem;
+        left: 4.5rem;
+    }
+}
