@@ -86,3 +86,27 @@
     width: 50%;
     margin: 1rem;
 }
+
+@media (max-width: 480px) {
+    .projects-container {
+        gap: 4rem;
+    }
+
+    .projects-cards-container {
+        gap: 1rem;
+    }
+
+    .project-img-card-container.left, .project-img-card-container.right {
+        flex-direction: column;
+    }
+
+    .backgroundImage {
+        width: 90%;
+    }
+    
+    .project-img-card-container.left .project-card, .project-img-card-container.right .project-card {
+        top: -4rem;
+        left: 2rem;
+    }
+
+}
