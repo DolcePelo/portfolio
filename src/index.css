@@ -7,10 +7,12 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
     margin: 0 1rem;
+    overflow-x: hidden;
 }
 
 :root {
