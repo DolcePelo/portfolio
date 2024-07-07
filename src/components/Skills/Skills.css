@@ -103,5 +103,6 @@
 @media (max-width: 480px) {
     .skills-container {
         margin-top: 15.5rem;
+        gap: 4rem;
     }
 }

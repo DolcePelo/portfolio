@@ -132,7 +132,38 @@
 }
 
 @media (max-width: 480px) {
+    .about-me-container {
+        gap: 4rem;
+    }
+
+    .about-me-card {
+        width: 90%;
+    }
+
+    .about-me-card p {
+        max-height: 16rem;
+        overflow-y: scroll;
+    }
+
     .about-me-languages-container {
         flex-direction: column;
     }
+}
+
+.about-me-card p::-webkit-scrollbar {
+    width: 12px;
+}
+
+.about-me-card p::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+}
+
+.about-me-card p::-webkit-scrollbar-thumb {
+    background: var(--color-secondary); 
+    border-radius: 10px;
+}
+
+.about-me-card p::-webkit-scrollbar-thumb:hover {
+    background: #555; 
 }
