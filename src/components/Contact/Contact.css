@@ -63,3 +63,13 @@
     transform: rotateX(180deg);
     background: lightgrey;
 }
+
+@media (max-width: 480px) {
+    .contact-container {
+        gap: 4rem;
+    }
+
+    .contact-info_container {
+        width: 30%;
+    }
+}
