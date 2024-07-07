@@ -62,16 +62,10 @@
         padding: 0;
     }
 
-    /* .banner-image {
-        max-width: 100%;
-        height: auto;
-        display: none;
-    } */
-
     .banner-image img {
         width: 18rem;
         height: 18rem;
-        top: 8rem;
-        left: 4.5rem;
+        top: 14rem;
+        left: 3rem;
     }
 }
