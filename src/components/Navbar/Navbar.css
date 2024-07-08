@@ -99,7 +99,7 @@
         flex-direction: row;
         align-items: center;
         padding: 1rem;
-        width: 85%;
+        width: 90%;
         margin: 0.5rem 1rem;
         height: auto;
     }
@@ -110,7 +110,10 @@
         flex: 1;
         display: flex;
         justify-content: center;
-        padding-left: 1rem;
+        width: 6rem;
+    }
+
+    .navbar-logo img {
         object-fit: cover;
     }
 
