@@ -39,8 +39,10 @@ function AboutMe() {
             <div className="about-me-card">
                 <h1>Marketing Graduate & Full Stack Web Developer
                 </h1>
-                <p>I'm Alejandro Pelozatto Italo-Argentino, marketing graduate with a passion for web development. I specialize in front-end development, using HTML, CSS, JavaScript, and React.js to create dynamic web experiences. Additionally, I have strong backend development skills with Node.js, Express, and MongoDB. <br />
-                    I am seeking opportunities to leverage my skills in both frontend and backend development to contribute to innovative projects, combining marketing insight with technical expertise to create impactful web applications.</p>
+                <p>I'm Alejandro Pelozatto, Italo-Argentinian, marketing graduate with a passion for full-stack web development. I specialize in building dynamic and engaging web applications, working across both frontend and backend technologies. <br />
+
+                    On the frontend, I craft interactive user experiences with HTML, CSS, JavaScript, and React.js. On the backend, I develop robust solutions using Node.js, Express, and MongoDB, ensuring seamless integration between the interface and the server. <br />
+                    I am seeking opportunities to leverage my full-stack skills to contribute to innovative projects, blending marketing insight with technical expertise to create impactful web applications.</p>
                 <div className="about-me-languages-container">
                     <div className="about-me-languages">
                         <h2>Languages:</h2>
