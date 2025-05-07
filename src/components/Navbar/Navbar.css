@@ -1,35 +1,31 @@
-/* Navbar.css */
+/* GENERAL */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: white;
-    color: var(--color-primary);
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-radius: 30px;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: var(--color-primary);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
-    max-width: 90%;
-    margin: 0.5rem auto;
 }
-
-.navbar.sticky {
-    background-color: rgba(255, 255, 255, 0.4);
-}
-
 
 .navbar-logo {
-    font-size: 24px;
-    font-weight: bold;
     width: 5rem;
     height: 5rem;
 }
 
 .navbar-logo img {
     width: 100%;
+}
+
+.navbar-toggle {
+    display: none;
+    /* Oculto por defecto, visible en mobile */
 }
 
 .navbar-links {
@@ -94,54 +90,34 @@
     cursor: pointer;
 }
 
-@media (max-width: 480px) {
+/* RESPONSIVE */
+@media (max-width: 768px) {
     .navbar {
-        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
         align-items: center;
         padding: 1rem;
-        width: 90%;
-        margin: 0.5rem 1rem;
-        height: auto;
-        max-width: 100%;
-    }
-
-    .navbar-logo {
-        margin-bottom: 0;
-        order: 2;
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        width: 7rem;
-        height: 7rem;
-    }
-
-    .navbar-logo img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        border-radius: 50%;
     }
 
     .navbar-toggle {
         display: block;
-        font-size: 2.5rem;
-        order: 1;
-        flex: 1;
+        font-size: 2rem;
+        cursor: pointer;
     }
 
     .navbar-links {
         flex-direction: column;
-        display: none;
+        align-items: center;
         width: 100%;
-        order: 3;
+        display: none;
         background-color: white;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         padding: 1rem;
-        border-radius: 10px;
         position: absolute;
-        top: 6rem;
+        top: 100%;
         left: 0;
         right: 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 0 0 10px 10px;
         z-index: 999;
     }
 
@@ -152,16 +128,11 @@
     .navbar-links li {
         width: 100%;
         text-align: center;
+        margin: 10px 0;
     }
 
     .navbar-links a {
         display: block;
-        padding: 10px 0;
         width: 100%;
-    }
-
-    .navbar-logotipo {
-        order: 2;
-        padding-left: 1.5rem;
     }
 }

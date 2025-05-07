@@ -1,32 +1,19 @@
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import Logo from "../../assets/logo-rbg.png";
 import "./Navbar.css";
 
 function Navbar() {
-    const navbarRef = useRef(null);
-    const [ isSticky, setSticky ] = useState(false);
     const [isMenuOpen, setMenuOpen] = useState(false);
-
-    const handleScroll = () => {
-        if (navbarRef.current) {
-            setSticky(navbarRef.current.getBoundingClientRect().top <= 0);
-        }
-    };
 
     const toggleMenu = () => {
         setMenuOpen(!isMenuOpen);
-    }
-
-    useEffect(() => {
-        window.addEventListener("scroll", handleScroll);
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
+    };
 
     return (
-        <nav ref={navbarRef} className={`navbar ${isSticky ? 'sticky' : ''}`}>
-            <div className="navbar-logo"><img src={Logo}></img></div>
+        <nav className="navbar">
+            <div className="navbar-logo">
+                <img src={Logo} alt="Logo" />
+            </div>
             <div className="navbar-toggle" onClick={toggleMenu}>
                 &#9776;
             </div>
@@ -43,4 +30,4 @@ function Navbar() {
     );
 }
 
-export default Navbar
+export default Navbar;
