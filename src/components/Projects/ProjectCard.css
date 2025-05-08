@@ -7,16 +7,18 @@
     padding: 1.5rem;
     transition: box-shadow 0.3s;
     box-shadow: 0 -4px 10px rgba(255, 255, 255, 0.5);
-    margin: 1rem 0;
+    margin: 1rem;
     width: 30%;
     min-height: 15rem;
 }
 
+/* Info dentro de la card */
 .project-info {
     text-align: left;
     color: var(--color-text);
 }
 
+/* Tecnologías usadas */
 .technologies {
     display: flex;
     flex-wrap: wrap;
@@ -30,9 +32,47 @@
     padding: 0.25rem 0.5rem;
     border-radius: 5px;
 }
+.project-links {
+    margin-top: 1rem;
+}
 
-@media (max-width: 480px) {
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-text);
+    background-color: var(--color-primary);
+    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.github-link:hover {
+    background-color: var(--color-secondary);
+    color: white;
+}
+
+
+/* 📱 Estilo responsive para mobile y tablets */
+@media (max-width: 1024px) {
     .project-card {
-        width: 80%;
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        width: 90%;
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+
+    .project-info {
+        text-align: center;
+    }
+
+    .technologies {
+        justify-content: center;
     }
 }

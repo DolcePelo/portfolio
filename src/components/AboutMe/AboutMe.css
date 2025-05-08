@@ -131,22 +131,36 @@
     object-fit: cover; 
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .about-me-container {
-        gap: 4rem;
+        gap: 3rem;
+        padding: 1rem;
     }
 
     .about-me-card {
         width: 90%;
+        padding: 1rem;
+        font-size: 1.1rem;
     }
 
     .about-me-card p {
-        max-height: 16rem;
-        overflow-y: scroll;
+        max-height: unset;
+        overflow-y: visible;
     }
 
     .about-me-languages-container {
         flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .profile-image {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .about-me-title {
+        font-size: 1.5rem;
     }
 }
 
